@@ -13,7 +13,7 @@ public class Exporter
 {
     public static void main(String[] args) throws Exception
     {
-        // database connection
+        // FIXED DB CONNECTION
         Connection jdbcConnection = DriverManager.getConnection(
 				"jdbc:hsqldb:file:../db-layer/database/testdb", "sa", "");
         IDatabaseConnection connection = new DatabaseConnection(jdbcConnection);
